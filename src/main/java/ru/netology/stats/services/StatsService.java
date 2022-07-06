@@ -66,7 +66,7 @@ public class StatsService {
         int monthNumbersMoreThanAverage = 0;
         int averagePerMonth = averageAmountPerMonth(sales);
         for (int t : sales) {
-            if (t < averagePerMonth) {
+            if (t > averagePerMonth) {
                 monthNumbersMoreThanAverage = monthNumbersMoreThanAverage + 1;
             }
         }
